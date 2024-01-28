@@ -1,0 +1,145 @@
+body {
+  font-family: "Verdana";
+  font-weight: 400;
+  margin: 0;
+  color: #335576;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.heading-3, .footer__header {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.card, .main__weekday {
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 2vh 1.5vw 2vh 1.5vw;
+}
+
+.navbar {
+  display: flex;
+  background-color: white;
+  padding: 0.75rem 8vw;
+  justify-content: space-between;
+}
+.navbar__list {
+  display: flex;
+  margin: 1.5vh 0;
+  align-items: center;
+}
+.navbar__heading {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #335576;
+  align-self: center;
+}
+.navbar__link {
+  margin-left: 1.5rem;
+  color: #393939;
+  font-size: 1.25rem;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+.navbar__link:hover {
+  color: #DB7A4E;
+}
+.navbar__link--active {
+  border-bottom: 3px solid #DB7A4E;
+}
+
+.footer {
+  background-color: #FEFAF5;
+  padding: 7vh 8vw 7vh 8vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__header {
+  margin-bottom: 1.5vh;
+}
+.footer__item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__content * {
+  margin: 1vh 1vw 0 0;
+}
+.footer__subtitle {
+  color: #DB7A4E;
+  font-weight: lighter;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+.footer__paragraph {
+  margin-top: 2vh;
+  font-size: 1.3rem;
+}
+.footer__icon {
+  height: 35px;
+  width: auto;
+}
+
+.main {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 8vh 8vw 10vh 8vw;
+}
+.main__title {
+  padding-top: 0.5vh;
+  padding-bottom: 2vh;
+  margin: 0;
+  font-size: 6.25rem;
+  font-weight: bold;
+  color: white;
+}
+.main__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3vh 0 6vh 0;
+}
+.main__weekday {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 330px;
+  height: 520px;
+  color: #393939;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main__weekday-title {
+  border-bottom: 3px solid #393939;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+.main__activity {
+  font-size: 1.3rem;
+  background-color: #FEFAF5;
+  padding: 20px 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.main {
+  background-image: url("../assets/images/greece.jpg");
+}/*# sourceMappingURL=greece.css.map */

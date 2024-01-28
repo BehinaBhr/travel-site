@@ -1,0 +1,55 @@
+@use './global' as *;
+@use './colors' as *;
+
+.main {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 8vh $main-padding 10vh $main-padding;
+
+    &__title {
+        padding-top: 0.5vh;
+        padding-bottom: 2vh;
+        margin: 0;
+        font-size: 6.25rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 3vh 0 6vh 0;
+    }
+
+    &__weekday {
+        @extend .card;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 330px;
+        height: 520px;
+        color: $graphite;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    &__weekday-title {
+        border-bottom: 3px solid $graphite;
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+    
+    &__activity {
+        font-size: 1.3rem;
+        background-color: $main-bg;
+        padding: 20px 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+}
