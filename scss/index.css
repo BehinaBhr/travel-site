@@ -13,13 +13,13 @@ ul {
   list-style-type: none;
 }
 
-.heading-3, .products__heading, .products__name, .footer__header {
+.heading-3, .destinitions__heading, .destinitions__name, .footer__header {
   font-size: 2rem;
   margin: 0;
   font-weight: bold;
 }
 
-.card, .products__item {
+.card, .destinitions__item {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 2vh 1.5vw 2vh 1.5vw;
@@ -86,7 +86,7 @@ ul {
 }
 .footer__paragraph {
   margin-top: 2vh;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 .footer__icon {
   height: 35px;
@@ -136,40 +136,38 @@ ul {
   min-width: 400px;
 }
 
-.products {
+.destinitions {
   padding: 4vh 8vw 10vh 8vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.products__heading {
+.destinitions__heading {
   align-self: flex-start;
   margin: 3.5vh 0 2vh 0;
 }
-.products__list {
-  align-self: stretch;
+.destinitions__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
 }
-.products__item {
+.destinitions__item {
   width: 370px;
   height: 550px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   background-size: cover;
   position: relative;
 }
-.products__item--hawaii {
+.destinitions__item--hawaii {
   background-image: url("../assets/images/hawaii.jpg");
 }
-.products__item--greece {
+.destinitions__item--greece {
   background-image: url("../assets/images/greece.jpg");
 }
-.products__item--iceland {
+.destinitions__item--iceland {
   background-image: url("../assets/images/iceland.jpg");
 }
-.products__name {
+.destinitions__name {
   padding: 20px;
   position: absolute;
   bottom: 0;
