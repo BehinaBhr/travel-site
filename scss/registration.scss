@@ -1,0 +1,49 @@
+@use './partials/global' as *;
+@use './partials/colors' as *;
+
+.main {
+    background-image: url("../assets/images/registration.jpg");
+    align-items: center;
+
+    &__title {
+        font-size: 4rem;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $main-bg;
+        padding: 40px 120px;
+    }
+
+    &__form-item {
+        margin-bottom: 16px;
+        padding: 10px;
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $gray;
+        font-size: 1.3rem;
+    }
+
+    &__button {
+        @extend .button;
+        text-align: center;
+    }
+
+    &__input {
+        padding: 10px;
+        border: 1px solid $gray;
+        border-radius: 4px;
+        font-size: 1rem;
+        width: 300px;
+        height: 40px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        height: auto;
+    }
+}

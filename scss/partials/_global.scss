@@ -18,8 +18,8 @@ a {
     text-decoration: none;
 }
 
-ul { 
-    list-style-type: none;    
+ul {
+    list-style-type: none;
 }
 
 .heading-3 {
@@ -33,6 +33,35 @@ ul {
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 2vh 1.5vw 2vh 1.5vw;
+}
+
+.main {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 8vh $main-padding 10vh $main-padding;
+
+    &__title {
+        padding-top: 0.5vh;
+        padding-bottom: 2vh;
+        margin: 0;
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.button {
+    width: 230px;
+    font-size: 1.4rem;
+    border: none;
+    background-color: $orange;
+    color: white;
+    cursor: pointer;
+    font-weight: 200;
+    padding: 0;
+    padding: 12px;
+    border-radius: 100px;
 }
 
 .navbar {
@@ -58,8 +87,8 @@ ul {
         margin-left: 1.5rem;
         color: $graphite;
         font-size: $main_font-size;
-        padding-bottom: 1vh;        
-        padding-top: 1vh;        
+        padding-bottom: 1vh;
+        padding-top: 1vh;
 
         &:hover {
             color: $orange;
@@ -87,7 +116,7 @@ ul {
         justify-content: space-between;
         flex-direction: column;
     }
-    
+
     &__content {
         display: flex;
         justify-content: space-between;

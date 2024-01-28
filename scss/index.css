@@ -25,6 +25,34 @@ ul {
   margin: 2vh 1.5vw 2vh 1.5vw;
 }
 
+.main {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 8vh 8vw 10vh 8vw;
+}
+.main__title {
+  padding-top: 0.5vh;
+  padding-bottom: 2vh;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.button, .title__button {
+  width: 230px;
+  font-size: 1.4rem;
+  border: none;
+  background-color: #DB7A4E;
+  color: white;
+  cursor: pointer;
+  font-weight: 200;
+  padding: 0;
+  padding: 12px;
+  border-radius: 100px;
+}
+
 .navbar {
   display: flex;
   background-color: white;
@@ -109,18 +137,6 @@ ul {
   margin-top: 0;
   font-size: 3.2rem;
   font-weight: bold;
-}
-.title__button {
-  width: 230px;
-  font-size: 1.4rem;
-  border: none;
-  background-color: #DB7A4E;
-  color: white;
-  cursor: pointer;
-  font-weight: 200;
-  padding: 0;
-  padding: 12px;
-  border-radius: 100px;
 }
 .title__paragraph {
   font-size: 1.25rem;

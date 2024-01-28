@@ -19,7 +19,7 @@ ul {
   font-weight: bold;
 }
 
-.card, .main__weekday {
+.card {
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 2vh 1.5vw 2vh 1.5vw;
@@ -40,7 +40,7 @@ ul {
   color: white;
 }
 
-.button {
+.button, .main__button {
   width: 230px;
   font-size: 1.4rem;
   border: none;
@@ -121,45 +121,42 @@ ul {
   width: auto;
 }
 
-.main__title {
-  font-size: 6.25rem;
-}
-.main__body {
-  display: flex;
+.main {
+  background-image: url("../assets/images/registration.jpg");
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 3vh 0 6vh 0;
 }
-.main__weekday {
+.main__title {
+  font-size: 4rem;
+}
+.main__form {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  width: 330px;
-  height: 520px;
-  color: #393939;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.main__weekday-title {
-  border-bottom: 3px solid #393939;
-  text-align: center;
-  font-size: 1.6rem;
-  margin-top: 20px;
-}
-.main__activities {
-  padding: 0;
-  margin-top: 0;
-}
-.main__activity {
-  font-size: 1.35rem;
+  justify-content: space-around;
+  align-items: center;
   background-color: #FEFAF5;
-  padding: 20px 30px;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  padding: 40px 120px;
 }
-
-.main {
-  background-image: url("../assets/images/hawaii.jpg");
-}/*# sourceMappingURL=hawaii.css.map */
+.main__form-item {
+  margin-bottom: 16px;
+  padding: 10px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+  font-size: 1.3rem;
+}
+.main__button {
+  text-align: center;
+}
+.main__input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.main textarea {
+  height: auto;
+}/*# sourceMappingURL=registration.css.map */

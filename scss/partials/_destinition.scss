@@ -2,19 +2,8 @@
 @use './colors' as *;
 
 .main {
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    padding: 8vh $main-padding 10vh $main-padding;
-
     &__title {
-        padding-top: 0.5vh;
-        padding-bottom: 2vh;
-        margin: 0;
         font-size: 6.25rem;
-        font-weight: bold;
-        color: white;
     }
 
     &__body {

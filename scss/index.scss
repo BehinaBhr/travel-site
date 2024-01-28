@@ -21,16 +21,7 @@
     }
 
     &__button {
-        width: 230px;
-        font-size: 1.4rem;
-        border: none;
-        background-color: $orange;
-        color: white;
-        cursor: pointer;
-        font-weight: 200;
-        padding: 0;
-        padding: 12px;
-        border-radius: 100px;
+        @extend .button;
     }
     
     &__paragraph {
