@@ -7,6 +7,12 @@ $main_font-size: 1.25rem;
 //     border: 1px dashed red
 // }
 
+@keyframes color-change {
+    to {
+        color: $orange;
+    }
+}
+
 body {
     font-family: 'Verdana';
     font-weight: 400;
@@ -91,7 +97,7 @@ ul {
         padding-top: 1vh;
 
         &:hover {
-            color: $orange;
+            animation: color-change 800ms forwards;
         }
 
         &--active {

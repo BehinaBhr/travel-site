@@ -1,3 +1,8 @@
+@keyframes color-change {
+  to {
+    color: #DB7A4E;
+  }
+}
 body {
   font-family: "Verdana";
   font-weight: 400;
@@ -78,7 +83,7 @@ ul {
   padding-top: 1vh;
 }
 .navbar__link:hover {
-  color: #DB7A4E;
+  animation: color-change 800ms forwards;
 }
 .navbar__link--active {
   border-bottom: 3px solid #DB7A4E;
