@@ -86,7 +86,7 @@ ul {
 }
 .footer__paragraph {
   margin-top: 2vh;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 .footer__icon {
   height: 35px;
@@ -131,8 +131,12 @@ ul {
   font-size: 1.6rem;
   margin-top: 20px;
 }
+.main__activities {
+  padding: 0;
+  margin-top: 0;
+}
 .main__activity {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   background-color: #FEFAF5;
   padding: 20px 30px;
   text-align: center;

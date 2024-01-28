@@ -43,9 +43,14 @@
         font-size: 1.6rem;
         margin-top: 20px;
     }
+
+    &__activities {
+        padding: 0;
+        margin-top: 0;
+    }
     
     &__activity {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         background-color: $main-bg;
         padding: 20px 30px;
         text-align: center;
