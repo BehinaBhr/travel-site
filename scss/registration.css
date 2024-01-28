@@ -140,6 +140,7 @@ ul {
   align-items: center;
   background-color: #FEFAF5;
   padding: 40px 120px;
+  border-radius: 5px;
 }
 .main__form-item {
   margin-bottom: 16px;
