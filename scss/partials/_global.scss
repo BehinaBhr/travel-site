@@ -1,0 +1,117 @@
+@use 'colors' as *;
+
+$main_padding: 8vw;
+$main_font-size: 1.25rem;
+
+// *, *:before, *:after {
+//     border: 1px dashed red
+// }
+
+body {
+    font-family: 'Verdana';
+    font-weight: 400;
+    margin: 0;
+    color: $blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul { 
+    list-style-type: none;    
+}
+
+.heading-3 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 2vh 1.5vw 2vh 1.5vw;
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    padding: 0.75rem $main-padding;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+        margin: 1.5vh 0;
+        align-items: center;
+    }
+
+    &__heading {
+        font-weight: bold;
+        font-size: 1.75rem;
+        color: $blue;
+        align-self: center;
+    }
+
+    &__link {
+        margin-left: 1.5rem;
+        color: $graphite;
+        font-size: $main_font-size;
+        padding-bottom: 1vh;        
+        padding-top: 1vh;        
+
+        &:hover {
+            color: $orange;
+        }
+
+        &--active {
+            border-bottom: 3px solid $orange;
+        }
+    }
+}
+
+.footer {
+    background-color: $main-bg;
+    padding: 7vh $main-padding 7vh $main-padding;
+    display: flex;
+    justify-content: space-evenly;
+
+    &__header {
+        @extend .heading-3;
+        margin-bottom: 1.5vh;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        * {
+            margin: 1vh 1vw 0 0;
+        }
+    }
+
+    &__subtitle {
+        color: $orange;
+        font-weight: lighter;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+
+    &__paragraph {
+        margin-top: 2vh;
+        font-size: 1.3rem;
+    }
+
+    &__icon {
+        height: 35px;
+        width: auto;
+    }
+}

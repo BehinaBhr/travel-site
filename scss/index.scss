@@ -1,0 +1,102 @@
+@use './partials/global' as *;
+@use './partials/colors' as *;
+
+.title {
+    background-color: $main-bg;
+    padding: 10vh $main-padding 12vh $main-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        width: 50vw;
+    }
+
+    &__heading {
+        font-weight: 300;
+        padding-bottom: 2vh;
+        margin-top: 0;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+
+    &__button {
+        width: 230px;
+        font-size: 1.4rem;
+        border: none;
+        background-color: $orange;
+        color: white;
+        cursor: pointer;
+        font-weight: 200;
+        padding: 0;
+        padding: 12px;
+        border-radius: 100px;
+    }
+    
+    &__paragraph {
+        font-size: $main_font-size;
+        margin: 2.5vh 0 4vh 0;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        
+        img{
+            width: 80%;
+            min-width: 400px;
+        }
+    }
+}
+
+.products {
+    padding: 4vh $main-padding 10vh $main-padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+        @extend .heading-3;
+        align-self: flex-start;
+        margin: 3.5vh 0 2vh 0;
+    }
+
+    &__list {
+        align-self: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    &__item {
+        @extend .card;
+        width: 370px;
+        height: 550px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        background-size: cover;
+        position: relative;
+
+        &--hawaii {
+            background-image: url('../assets/images/hawaii.jpg');
+        }
+
+        &--greece {
+            background-image: url('../assets/images/greece.jpg');
+        }
+        
+        &--iceland {
+            background-image: url('../assets/images/iceland.jpg');
+        }
+    }
+
+    &__name {
+        @extend .heading-3;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: white;
+    }
+}
